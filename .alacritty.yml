@@ -1,0 +1,19 @@
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+  #- ~/.config/alacritty/catppuccin/catppuccin-dark.yml
+  #- ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  #- ~/.config/alacritty/themes/themes/catppuccin.yaml
+
+env:
+  TERM: xterm-256color
+
+window:
+  #opacity: 0.95
+  decorations: 'none'
+
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
