@@ -1,0 +1,141 @@
+@import "breeze.css";
+
+* {
+	border: none;
+	font-family: JetBrainsMono Nerd Font;
+	font-size: 12px;
+}
+
+window {
+}
+
+window#waybar {
+  background-color: @crust;
+  border: 2px solid @crust;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+/*-----module groups----*/
+.modules-right {
+	background: transparent;
+	margin: 0 -12px 0 0;
+	border-radius: 20px;
+}
+.modules-center {
+	background: transparent;
+	margin: 0 0 0 0;
+	border-radius: 20px;
+}
+.modules-left {
+	background: transparent;
+	margin: 0 0 0 -12px;
+}
+
+tooltip {
+	background-color: @mantle;
+  border: 2px solid @red;
+	color: @text;
+	border-radius: 10px;
+}
+
+#workspaces {
+  margin-left: 15px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+#workspaces button {
+    background-color: @base;
+    padding: 0 10px;
+    padding-bottom: 2px;
+    font-weight: bold;
+    border-radius: 2;
+    border-bottom: 1px solid @base;
+    border-top: 1px solid @base;
+
+}
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    color: @hover;
+}
+
+#workspaces button.active {
+    /* color: #BC83E3; */
+	color: @crust;
+  border-top: 1px solid @blue;
+  border-bottom: 1px solid @blue;
+  background: @blue;
+}
+
+button.urgent {
+    color: #11111b;
+    background: #fab387;
+    border-radius: 10px;
+}
+
+#custom-sep {
+	color: #313244;
+	font-size: 18px;
+}
+
+#window {
+	color: #cdd6f4;
+	font-family: JetbrainsMono Nerd Font;
+	font-size: 12;
+}
+
+#custom-recorder {
+	font-size: 10px;
+	margin: 2px 7px 0px 7px;
+}
+
+#clock {
+	margin: 2px 0 0 0;
+	padding: 2px;
+	border-radius: 10px;
+	font-family: JetbrainsMono Nerd Font;
+}
+
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network #pulseaudio,
+#tray,
+#mode,
+#custom-power,
+#custom-menu,
+#idle_inhibitor {
+	padding: 0 5px;
+}
+
+#mode {
+	color: #cc3436;
+	font-weight: bold;
+}
+
+#backlight {
+  color: @yellow;
+}
+/*-----Indicators----*/
+#network.disconnected {
+	color: @orange;
+}
+#network.disabled {
+	color: @red;
+}
+#idle_inhibitor.activated {
+	color: @lavender;
+}
+#pulseaudio.muted {
+	color: @red;
+}
+#battery.charging {
+	color: @green;
+}
+#battery.warning:not(.charging) {
+	color: @orange;
+}
+#battery.critical:not(.charging) {
+	color: @red;
+}
