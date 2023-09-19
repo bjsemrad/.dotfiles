@@ -13,9 +13,9 @@ configuration {
 window {
     background-color:               @BG;
     text-color:                     @FG;
-    border:                         2px;
+    border:                         3px;
     border-color:                   @BDR;
-    border-radius:                  14px;
+    border-radius:                  10px;
     width:                          750px;
     anchor:                         center;
     x-offset:                       0;
