@@ -67,6 +67,14 @@ tooltip {
   background: @blue;
 }
 
+#workspaces button.focused {
+    /* color: #BC83E3; */
+	color: @crust;
+  border-top: 1px solid @blue;
+  border-bottom: 1px solid @blue;
+  background: @blue;
+}
+
 button.urgent {
     color: #11111b;
     background: #fab387;
