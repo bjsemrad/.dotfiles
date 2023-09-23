@@ -15,8 +15,6 @@
   "modules-right": [
     "tray",
     "custom/space",
-    "custom/notification",
-    "custom/space",
     "backlight",
     "custom/space",
     "pulseaudio",
