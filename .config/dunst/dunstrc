@@ -1,0 +1,17 @@
+[global]
+frame_color = "#3daee9"
+separator_color= frame
+font = "JetBrainsMono Nerd Font 12"
+
+[urgency_low]
+background = "#232629"
+foreground = "#D9E0EE"
+
+[urgency_normal]
+background = "#232629"
+foreground = "#D9E0EE"
+
+[urgency_critical]
+background = "#232629"
+foreground = "#D9E0EE"
+frame_color = "#da4453"
