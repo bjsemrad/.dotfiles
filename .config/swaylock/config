@@ -1,5 +1,6 @@
 image=~/.config/swaylock/forrest.png
 clock
+timestr=%I:%M %p
 indicator-idle-visible
 color=282a36
 inside-color=232629
