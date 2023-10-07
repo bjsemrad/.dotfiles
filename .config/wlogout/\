@@ -22,7 +22,7 @@ button:hover {
 }
 
 button:focus {
-    background-color: #3daee9;
+    background-color: #232629; /*7aa7f2;*/
     color: #18182a;
     text-shadow: none;
 }

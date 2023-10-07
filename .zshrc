@@ -22,4 +22,6 @@ alias gst='git status'
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+alias qmksetup='. ./python/qmk/bin/activate'
+alias vialsetup='. ./python/vial/bin/activate'
 eval "$(starship init zsh)"
