@@ -11,7 +11,10 @@
     "custom/space",
     "wlr/taskbar"
   ],
-  "modules-center": [],
+  "modules-center": [
+    "cpu",
+    "memory"
+  ],
   "modules-right": [
     "tray",
     "custom/space",
@@ -24,6 +27,9 @@
     "battery",
     "custom/space",
     "clock",
+    "custom/space",
+    "custom/space",
+    "custom/session",
     "custom/space",
     "custom/space"
   ],
@@ -67,12 +73,12 @@
       "default": "󰐥 "
     },
     "toolip": false,
-    "on-click": "wlogout -p layer-shell"
+    "on-click": "killall wlogout || wlogout -b 5 -m 500"
   },
   "backlight": {
     "format": "{icon} {percent}%",
     "format-icons": [
-      ""
+      " "
     ]
   },
   "hyprland/workspaces": {
@@ -138,11 +144,10 @@
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "cpu": {
-    "format": "   {usage}%",
-    "tooltip": false
+    "format": "   {usage}%"
   },
   "memory": {
-    "format": " {}%"
+    "format": "  {}%"
   },
   "battery": {
     "states": {
@@ -173,7 +178,7 @@
     "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n⬆️ {bandwidthUpBits} ⬇️ {bandwidthDownBits}",
     "format-linked": "{ifname} (No IP) ",
     "on-click-right": "nm-connection-editor",
-    "on-click": "bash '/home/brian/.scripts/rofi-network-manager.sh'"
+    "on-click": "bash '/home/brian/.config/rofi/bin/rofi-network-manager.sh'"
   },
   "pulseaudio": {
     "format": "{volume}% {icon} {format_source}",
