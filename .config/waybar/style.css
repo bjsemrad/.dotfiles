@@ -13,7 +13,7 @@ window {
 
 window#waybar {
   background-color: @crust;
-  /*border: 2px solid @crust;*/
+  /*background: transparent;*/
 	transition-property: background-color;
 	transition-duration: 0.5s;
 }
@@ -46,7 +46,8 @@ tooltip {
   padding-bottom: 2px;
 }
 #workspaces button {
-    background-color: @crust;
+    /*background-color: @crust;*/
+    background: transparent;
     color: @subtext0;
     padding: 0 10px;
     padding-bottom: 2px;
@@ -60,7 +61,8 @@ tooltip {
     /*box-shadow: inherit;
     text-shadow: inherit;*/
     color: @text;
-    background: @crust;
+    /*background: @crust;*/
+    background: transparent;
 }
 
 #workspaces button.active {
@@ -73,15 +75,15 @@ tooltip {
 }
 
 #workspaces button.focused {
-    /* color: #BC83E3; */
 	color: @crust;
-  border-top: 1px solid @blue;
+  /*border-top: 1px solid @blue;
   border-bottom: 1px solid @blue;
-  background: @blue;
+  background: @blue;*/
 }
 
 #taskbar button {
-  background: @crust;
+  /*background: @crust;*/
+  background: transparent;
 }
 
 button.urgent {
