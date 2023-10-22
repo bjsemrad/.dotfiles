@@ -35,7 +35,7 @@ window#waybar {
 
 tooltip {
 	background-color: @crust;
-  border: 2px solid @orange;
+  border: 2px solid #585b70;
 	color: @text;
 	border-radius: 10px;
 }
