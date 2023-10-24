@@ -62,7 +62,7 @@
 [urgency_normal]
     background = "#232629"
     foreground = "#D9E0EE"
-    highlight = "#3daee9"
+    highlight = "#FFFFFF"
 
 [urgency_critical]
     background = "#232629"
