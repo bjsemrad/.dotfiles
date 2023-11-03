@@ -12,7 +12,8 @@ window {
 }
 
 window#waybar {
-  background-color: @crust;
+  background-color: rgba(0,0,0,0.6);
+  /*background-color: @crust;*/
   /*background: transparent;*/
 	transition-property: background-color;
 	transition-duration: 0.5s;
@@ -68,6 +69,7 @@ tooltip {
 #workspaces button.active {
     /* color: #BC83E3; */
   color: @white;
+  background: transparent;
 	/*color: @crust;
  border-top: 1px solid #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
