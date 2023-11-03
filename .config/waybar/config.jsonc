@@ -12,8 +12,7 @@
     "wlr/taskbar"
   ],
   "modules-center": [
-    "cpu",
-    "memory"
+    "hyprland/window"
   ],
   "modules-right": [
     "tray",
@@ -25,6 +24,9 @@
     "network",
     "custom/space",
     "battery",
+    "custom/space",
+    "cpu",
+    "memory",
     "custom/space",
     "clock",
     "custom/space",
@@ -47,7 +49,7 @@
     "format": " "
   },
   "hyprland/window": {
-    "format": "  {}",
+    "format": "{class}",
     "max-length": 50,
     "separate-outputs": true
   },
