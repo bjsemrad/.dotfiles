@@ -4,7 +4,7 @@
 
 * {
 	border: none;
-	font-family: Noto, JetBrainsMono Nerd Font;
+	font-family: Noto Mono, JetBrainsMono Nerd Font;
 	font-size: 14px;
 }
 
@@ -106,8 +106,8 @@ button.urgent {
 
 #window {
 	color: #FFFFFF;
-	font-family: Noto, JetbrainsMono Nerd Font;
-	font-size: 12;
+	font-family: Noto Mono, JetbrainsMono Nerd Font;
+	font-size: 14;
 }
 
 #custom-recorder {
@@ -120,7 +120,7 @@ button.urgent {
 	padding: 2px;
 	border-radius: 10px;
   color: #FFFFFF;
-	font-family: Noto, JetbrainsMono Nerd Font;
+	font-family: Noto Mono, JetbrainsMono Nerd Font;
 }
 
 #battery,
