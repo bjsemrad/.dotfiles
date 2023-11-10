@@ -49,7 +49,7 @@
     "format": " "
   },
   "hyprland/window": {
-    "format": "{class}",
+    "format": "{title}",
     "max-length": 50,
     "separate-outputs": true
   },
