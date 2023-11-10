@@ -89,7 +89,7 @@
     "on-click": "activate",
     "format": "{icon}",
     "persistent_workspaces": {
-      "*": 10
+      "*": 1
     },
     "format-icons": {
       "1": "1",
