@@ -1,4 +1,4 @@
-image=~/.config/swaylock/forrest.png
+image=~/.config/hypr/small-memory.jpg
 clock
 timestr=%I:%M %p
 indicator-idle-visible
