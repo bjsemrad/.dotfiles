@@ -40,14 +40,12 @@ tooltip {
 
 #workspaces {
   margin-left: 15px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  margin-top: 2px;
 }
 #workspaces button {
     background: transparent;
     color: @subtext0;
     padding: 0 10px;
-    padding-bottom: 2px;
     font-weight: bold;
     border-radius: 2;
 }
@@ -72,7 +70,6 @@ tooltip {
 
 #taskbar button.active {
   background: transparent;
-  border-bottom: 2px solid #FFFFFF;
 }
 
 
@@ -106,6 +103,7 @@ button.urgent {
 #clock {
   color: @white;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 #tray {
