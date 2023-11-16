@@ -32,7 +32,7 @@
     history_length = 20 
     show_age_threshold = 60 
     markup = "full" 
-    font = "Noto 12" 
+    font = " NotoMono Nerd Font 12" 
     format = "<b>%s</b>\n%b: 
     word_wrap = "yes" 
     sort = "yes" 
@@ -54,18 +54,18 @@
     per_monitor_dpi = false
 
 [urgency_low]
-    background = "#232629"
+    background = "#232629F2"
     foreground = "#D9E0EE"
     highlight = "#3daee9"
 
 
 [urgency_normal]
-    background = "#232629"
+    background = "#232629F2"
     foreground = "#D9E0EE"
     highlight = "#FFFFFF"
 
 [urgency_critical]
-    background = "#232629"
+    background = "#232629F2"
     foreground = "#da4453"
     frame_color = "#da4453"
     highlight = "#da4453"
