@@ -9,10 +9,10 @@ env:
 
 window:
   opacity: 0.95
-  decorations: "none"
+  #  decorations: "none"
 
-font:
-  size: 12
+#font:
+#  size: 14
 
 shell:
   program: /bin/zsh

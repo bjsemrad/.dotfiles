@@ -3,8 +3,8 @@ if pgrep -x rofi >/dev/null; then
 	pkill rofi
 else
 	rofi \
-		-show drun \
-		-modi drun,run,window \
+		-show window \
+		-modi window \
 		-scroll-method 0 \
 		-drun-match-fields all \
 		-drun-display-format "{name}" \

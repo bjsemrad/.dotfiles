@@ -1,10 +1,9 @@
-@import "breeze.css";
+@import "colors.css";
 
-/*@import "dark.css";*/
 
 * {
 	border: none;
-	font-family: NotoMono Nerd Font, JetBrainsMono Nerd Font;
+	font-family: Font Awesome, NotoMono Nerd Font, JetBrainsMono Nerd Font;
 	font-size: 14px;
 }
 
@@ -13,12 +12,10 @@ window {
 
 window#waybar {
   background-color: rgba(0,0,0,0.6);
-  /*background-color: @crust;*/
-  /*background: transparent;*/
 	transition-property: background-color;
 	transition-duration: 0.5s;
 }
-/*-----module groups----*/
+
 .modules-right {
 	background: transparent;
 	margin: 0 -12px 0 0;
@@ -47,46 +44,37 @@ tooltip {
   padding-bottom: 2px;
 }
 #workspaces button {
-    /*background-color: @crust;*/
     background: transparent;
     color: @subtext0;
     padding: 0 10px;
     padding-bottom: 2px;
     font-weight: bold;
     border-radius: 2;
-    /*border-bottom: 1px solid @base;
-    border-top: 1px solid @base;*/
-
 }
+
 #workspaces button:hover {
-    /*box-shadow: inherit;
-    text-shadow: inherit;*/
     color: @text;
-    /*background: @crust;*/
     background: transparent;
 }
 
 #workspaces button.active {
-    /* color: #BC83E3; */
   color: @white;
   background: transparent;
-	/*color: @crust;
- border-top: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
-  background: #FFFFFF;*/
 }
 
 #workspaces button.focused {
 	color: @crust;
-  /*border-top: 1px solid @blue;
-  border-bottom: 1px solid @blue;
-  background: @blue;*/
 }
 
 #taskbar button {
-  /*background: @crust;*/
   background: transparent;
 }
+
+#taskbar button.active {
+  background: transparent;
+  border-bottom: 2px solid #FFFFFF;
+}
+
 
 button.urgent {
     color: #11111b;
@@ -96,57 +84,88 @@ button.urgent {
 
 #custom-sep {
 	color: #313244;
-	font-size: 18px;
+	font-size: 14px;
 }
 
 #custom-session {
 	color: #FFFFFF;
-  font-size: 18px;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 5px;
 }
 
 #window {
 	color: #FFFFFF;
-	font-family: NotoMono Nerd Font, JetbrainsMono Nerd Font;
 	font-size: 14;
 }
 
 #custom-recorder {
 	font-size: 10px;
-	margin: 2px 7px 0px 7px;
 }
 
 #clock {
-	margin: 2px 0 0 0;
-	padding: 2px;
-	border-radius: 10px;
-  color: #FFFFFF;
-	font-family: NotoMono Nerd Font, JetbrainsMono Nerd Font;
+  color: @white;
+  margin-right: 10px;
 }
 
-#battery,
-#cpu,
-#memory,
-#temperature,
-#network,
+#tray {
+  margin-right: 10px;
+  margin-top: 2px;
+  color: @white;
+  padding: 4px;
+}
+
+#battery {
+  margin-right: 1px;
+  margin-left: 2px;
+  margin-top: 2px;
+  color: @white;
+  font-size: 18px;
+}
+
 #pulseaudio,
-#tray,
+#wireplumber,
 #mode,
 #custom-power,
 #custom-menu,
+#backlight,
 #idle_inhibitor {
-	padding: 0 5px;
+  margin-right: 8px;
+  margin-left: 8px;
+  margin-top: 2px;
+  color: @white;
+  font-size: 18px;
+}
+
+#network {
+  margin-right: 8px;
+  margin-left: 2px;
+  margin-top: 2px;
+  color: @white;
+  font-size: 18px;
+}
+
+#bluetooth {
+ margin-right: 6px;
+  margin-left: 8px;
+  margin-top: 2px;
+  color: @white;
+  font-size: 20px;
+}
+
+
+#cpu,
+#memory,
+#temperature {
   color: @white;
 }
+
 
 #mode {
 	color: #cc3436;
 	font-weight: bold;
 }
 
-#backlight {
-  color: @white
-}
-/*-----Indicators----*/
 #network.disconnected {
 	color: @white;
 }
@@ -157,7 +176,6 @@ button.urgent {
 	color: @lavender;
 }
 #pulseaudio.muted {
-	color: @red;
 }
 #battery.charging {
 	color: @white;
