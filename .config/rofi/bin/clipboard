@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+if pgrep -x rofi >/dev/null; then
+	pkill rofi
+else
+	selection=$(cliphist list |
+		rofi \
+			-dmenu \
+			-modi drun \
+			-scroll-method 0 \
+			-drun-match-fields all \
+			-drun-display-format "{name}" \
+			-no-drun-show-actions \
+			-terminal alacritty \
+			-kb-cancel Escape \
+			-theme "$HOME"/.config/rofi/config/rounded-dark-grey.rasi)
+	if [ $? -eq 0 ]; then
+		echo "$selection" | cliphist decode | wl-copy
+	fi
+fi

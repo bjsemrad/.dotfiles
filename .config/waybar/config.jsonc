@@ -12,6 +12,7 @@
   "modules-center": [],
   "modules-right": [
     "tray",
+    "custom/clipboard",
     "backlight",
     "pulseaudio#sink",
     "pulseaudio#source",
@@ -38,6 +39,14 @@
     "format": "{title}",
     "max-length": 50,
     "separate-outputs": true
+  },
+  "custom/clipboard": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "󰨸"
+    },
+    "on-click": "/home/brian/.config/rofi/bin/clipboard",
+    "on-click-right": "cliphist wipe"
   },
   "custom/notification": {
     "tooltip": true,
